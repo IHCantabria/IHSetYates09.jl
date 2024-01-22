@@ -373,14 +373,14 @@ function cal_Yates09()
                     "len", 1,
                     atts = RP_atts)
         ncwrite([aRP], output, "RP")
-        nccreate(output, "RMS",
+        nccreate(output, "RMSE",
                     "len", 1,
                     atts = RMSE_atts)
-        ncwrite([aRMSE], output, "RMSE_flagP="*string(i))
-        nccreate(output, "MSS_flagP="*string(i),
+        ncwrite([aRMSE], output, "RMSE")
+        nccreate(output, "MSS",
                     "len", 1,
                     atts = MSS_atts)
-        ncwrite([aMSS], output, "MSS_flagP="*string(i))
+        ncwrite([aMSS], output, "MSS")
 
     elseif calPar == 5
 
