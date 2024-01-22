@@ -189,7 +189,7 @@ function cal_Yates09()
     idx_obs = zeros(length(t_obs))
 
     for i in eachindex(t_obs)
-        idx_obs[i] = argmin(abs.(t_wav .- t_obs[i])
+        idx_obs[i] = argmin(abs.(t_wav .- t_obs[i]))
     end
 
     idx_obs = convert(Array{Int64},idx_obs)
