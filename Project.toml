@@ -4,7 +4,10 @@ authors = ["defreitasL <lucas12.fp@hotmail.com> and contributors"]
 version = "1.0.0-DEV"
 
 [deps]
+BlackBoxOptim = "a134a8b2-14d6-55f6-9291-3336d3ab0209"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
 IHSetUtils = "2fbe2ced-d81f-41b4-8f59-9b074fb3e7ff"
+NetCDF = "30363a11-5582-574a-97bb-aa9a979735b9"
 
 [compat]
 julia = "1"
