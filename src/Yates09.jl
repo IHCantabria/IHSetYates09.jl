@@ -302,7 +302,7 @@ function cal_Yates09()
         hour_atts = Dict("long_name" => "Hour")
         println("Writing output...")
 
-        output = wrkDir*"/results/Shoreline_MD.nc"
+        output = wrkDir*"/results/Shoreline_Y09.nc"
         nccreate(output, "year",
                     "dim", length(YY),
                     atts = year_atts)
@@ -477,7 +477,7 @@ function cal_Yates09()
         hour_atts = Dict("long_name" => "Hour")
         println("Writing output...")
 
-        output = wrkDir*"/results/Shoreline_MD.nc"
+        output = wrkDir*"/results/Shoreline_Y09.nc"
         nccreate(output, "year",
                     "dim", length(YY),
                     atts = year_atts)
