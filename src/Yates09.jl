@@ -150,6 +150,7 @@ function cal_Yates09()
     configF = dats*"config.nc"
 
     dt = ncread(configF, "dt")[1]
+    calPar = ncread(configF, "calPar")[1]
     
     brk, angBati, depth, D50 = ncread(configF, "brk")[1], ncread(configF, "angBati")[1], ncread(configF, "depth")[1], ncread(configF, "D50")[1]
 
