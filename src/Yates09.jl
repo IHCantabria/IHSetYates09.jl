@@ -209,9 +209,7 @@ function cal_Yates09()
     objr = Dict()
 
     if calPar == 4
-        println("calPar =" * string(calPar) * " - 4 parameters")
         function Calibra_4r(Χ)
-            println("calPar =" * string(calPar) * " 214")
             Ymd = Yates09(E, dt, -exp(Χ[1]), exp(Χ[2]), -exp(Χ[3]), -exp(Χ[4]), Y_obs[1])
             YYsl = Ymd[idx_obs]
             if MetObj == "Pearson"
@@ -240,7 +238,6 @@ function cal_Yates09()
                     (log(1e-5), log(1e-1))]
 
         if MetObj == "Double" || MetObj == "Double2" || MetObj == "Double3"
-            println("calPar =" * string(calPar) * " 243")
             resr = bboptimize(Calibra_4r; 
                             # Method = :simultaneous_perturbation_stochastic_approximation,
                             SearchRange = boundsr,
@@ -386,9 +383,8 @@ function cal_Yates09()
         ncwrite([aMSS], output, "MSS_flagP="*string(i))
 
     elseif calPar == 5
-        println("calPar =" * string(calPar) * " - 388")
+
         function Calibra_5r(Χ)
-            println("calPar =" * string(calPar) * " 390")
             Ymd = Yates09(E, dt, -exp(Χ[1]), exp(Χ[2]), -exp(Χ[3]), -exp(Χ[4]), Χ[5])
             YYsl = Ymd[idx_obs]
             if MetObj == "Pearson"
@@ -418,7 +414,6 @@ function cal_Yates09()
                     (0.25*minimum(Y_obs), 2*maximum(Y_obs))]
 
         if MetObj == "Double" || MetObj == "Double2" || MetObj == "Double3"
-            println("calPar =" * string(calPar) * " 420")
             resr = bboptimize(Calibra_5r; 
                             # Method = :simultaneous_perturbation_stochastic_approximation,
                             SearchRange = boundsr,
