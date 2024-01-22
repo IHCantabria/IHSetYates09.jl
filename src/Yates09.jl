@@ -99,7 +99,7 @@ function Yates09(E, dt, a, b, cacr, cero, Yini)
     
     Seq = (E .- b) ./ a
     
-    Y = similar(E)
+    Y = zeros(length(E))
     
     Y[1] = Yini
 
