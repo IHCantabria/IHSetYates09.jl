@@ -184,7 +184,7 @@ function cal_Yates09()
 
     ii =  t_wav .<= t_obs[end] .&& t_wav .>= t_obs[1]
 
-    t_wav, hb, tp, sl, hs, depthb = t_wav[ii], Hb[ii], Tp[ii], sl[ii], Hs[ii], depthb[ii]
+    t_wav, hb, tp, hs, depthb = t_wav[ii], Hb[ii], Tp[ii], Hs[ii], depthb[ii]
 
     idx_obs = zeros(length(t_obs))
 
