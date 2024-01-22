@@ -111,7 +111,7 @@ function Yates09(E, dt, a, b, cacr, cero, Yini)
         end
     end
     
-    return Y, Seq
+    return Y
 end
 
 function Yates09Vitousek21Mod(hs, dt, H_s, DY, DT, Yini)
