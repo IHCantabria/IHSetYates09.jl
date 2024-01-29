@@ -1,6 +1,6 @@
 """
 #######################################
-# Yates et al. (2004) model           #
+# Yates et al. (2009) model           #
 # E: wave energy                      #
 # dt: time step                       #
 # a: model's parameter                #
@@ -133,6 +133,17 @@ function Yates09Vitousek21Mod(hs, dt, H_s, DY, DT, Yini)
 end
 
 function cal_Yates09()
+
+    """
+    cal_Yates09()
+    
+    Function to calibrate and run the Yates et al. (2009) Shoreline Evolution Model.
+    
+    This function reads input datasets, performs calibration, and writes the results to an output NetCDF file.
+    
+    Note: The function internally uses the Yates09 function for shoreline evolution.
+    
+    """
 
     println("Loading libraries...")
     wrkDir = pwd()
