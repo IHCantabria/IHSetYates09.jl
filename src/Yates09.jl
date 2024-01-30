@@ -19,7 +19,6 @@
 # Yi: initial position                #
 #######################################
 """
-
 function run_Yates09()
 
     println("Loading libraries...")
@@ -133,7 +132,6 @@ function Yates09Vitousek21Mod(hs, dt, H_s, DY, DT, Yini)
 end
 
 function cal_Yates09()
-
     """
     cal_Yates09()
     
